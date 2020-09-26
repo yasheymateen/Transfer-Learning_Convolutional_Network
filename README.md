@@ -13,34 +13,29 @@ This project involves application of the Inception V3 convolutional network thro
 
 ## Results
 While the training was originally planned to undergo 30 iterations (epochs) of the algorithm, the model was stopped by early stopping as mentioned above, and we were able to obtain 87% accuracy in the validation data set and 98% accuracy in the training data set.
-`Epoch 00001: LearningRateScheduler reducing learning rate to 0.001.
-Epoch 1/30
-782/782 [==============================] - 120s 154ms/step - loss: 1.1956 - accuracy: 0.5866 - val_loss: 0.8274 - val_accuracy: 0.7155
 
-Epoch 00002: LearningRateScheduler reducing learning rate to 0.0005.
-Epoch 2/30
-782/782 [==============================] - 118s 150ms/step - loss: 0.6822 - accuracy: 0.7675 - val_loss: 1.1287 - val_accuracy: 0.6351
+* `Epoch 00001: LearningRateScheduler reducing learning rate to 0.001.`
+  `Epoch 1/30`
+  `782/782 [==============================] - 120s 154ms/step - loss: 1.1956 - accuracy: 0.5866 - val_loss: 0.8274 - val_accuracy: 0.7155`
+* `Epoch 00002: LearningRateScheduler reducing learning rate to 0.0005.`
+  `Epoch 2/30`
+  `782/782 [==============================] - 118s 150ms/step - loss: 0.6822 - accuracy: 0.7675 - val_loss: 1.1287 - val_accuracy: 0.6351`
+* `Epoch 00003: LearningRateScheduler reducing learning rate to 0.0003333333333333333.`
+  `Epoch 3/30`
+  `782/782 [==============================] - 119s 152ms/step - loss: 0.4651 - accuracy: 0.8458 - val_loss: 0.5581 - val_accuracy: 0.8128`
+* `Epoch 00004: LearningRateScheduler reducing learning rate to 0.00025.`
+  `Epoch 4/30`
+  `782/782 [==============================] - 119s 152ms/step - loss: 0.2679 - accuracy: 0.9112 - val_loss: 0.5211 - val_accuracy: 0.8453`
+* `Epoch 00005: LearningRateScheduler reducing learning rate to 0.0002.`
+  `Epoch 5/30`
+  `782/782 [==============================] - 118s 151ms/step - loss: 0.1413 - accuracy: 0.9540 - val_loss: 0.5720 - val_accuracy: 0.8574`
+* `Epoch 00006: LearningRateScheduler reducing learning rate to 0.00016666666666666666.`
+  `Epoch 6/30`
+  `782/782 [==============================] - 118s 151ms/step - loss: 0.0804 - accuracy: 0.9736 - val_loss: 0.6445 - val_accuracy: 0.8571`
+* `Epoch 00007: LearningRateScheduler reducing learning rate to 0.00014285714285714287.`
+  `Epoch 7/30`
+  `782/782 [==============================] - 118s 151ms/step - loss: 0.0425 - accuracy: 0.9863 - val_loss: 0.6563 - val_accuracy: 0.8714`
 
-Epoch 00003: LearningRateScheduler reducing learning rate to 0.0003333333333333333.
-Epoch 3/30
-782/782 [==============================] - 119s 152ms/step - loss: 0.4651 - accuracy: 0.8458 - val_loss: 0.5581 - val_accuracy: 0.8128
-
-Epoch 00004: LearningRateScheduler reducing learning rate to 0.00025.
-Epoch 4/30
-782/782 [==============================] - 119s 152ms/step - loss: 0.2679 - accuracy: 0.9112 - val_loss: 0.5211 - val_accuracy: 0.8453
-
-Epoch 00005: LearningRateScheduler reducing learning rate to 0.0002.
-Epoch 5/30
-782/782 [==============================] - 118s 151ms/step - loss: 0.1413 - accuracy: 0.9540 - val_loss: 0.5720 - val_accuracy: 0.8574
-
-Epoch 00006: LearningRateScheduler reducing learning rate to 0.00016666666666666666.
-Epoch 6/30
-782/782 [==============================] - 118s 151ms/step - loss: 0.0804 - accuracy: 0.9736 - val_loss: 0.6445 - val_accuracy: 0.8571
-
-Epoch 00007: LearningRateScheduler reducing learning rate to 0.00014285714285714287.
-Epoch 7/30
-782/782 [==============================] - 118s 151ms/step - loss: 0.0425 - accuracy: 0.9863 - val_loss: 0.6563 - val_accuracy: 0.8714
-`
 
 ## Discussion
 Some things to note during this process include the importance of using a lower learning rate to capitalize on the weights of the pre-trained model. This comes into play when selecting hyperparameters. We used the Adam Optimizer, but others would work as well such as SGD, and all affect the epochs(iterations of the algorithm) required to obtain a sufficiently trained model.
